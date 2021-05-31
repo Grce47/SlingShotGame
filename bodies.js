@@ -27,7 +27,7 @@ class Box {
         translate(pos.x, pos.y);
         rotate(ang);
         fill(this.R,this.G,this.B);
-        stroke(255);
+        stroke(0);
         rect(0, 0, this.w, this.h);
         pop();
     };
@@ -67,7 +67,7 @@ class Circle {
     show() {
         var pos = this.body.position;
         fill(125);
-        stroke(255);
+        stroke(0);
         circle(pos.x, pos.y, this.d);
     };
     offScreen() {
@@ -113,7 +113,7 @@ class Square {
         translate(pos.x, pos.y);
         rotate(ang);
         fill(125);
-        stroke(255);
+        stroke(0);
         rect(0, 0, this.w, this.h);
         pop();
     };
@@ -163,7 +163,7 @@ class Polygon {
         translate(px,py);
         rotate(ang + (PI/this.side));
         fill(125);
-        stroke(255);
+        stroke(0);
         polygon(0,0,this.r,this.side);
         pop();
     }
